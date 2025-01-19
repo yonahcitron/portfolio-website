@@ -53,12 +53,12 @@ function Expertise() {
                 <div className="skill">
                     <div className="skill-icons">
                         <FontAwesomeIcon icon={faPython} size="3x"/>
-                        <FontAwesomeIcon icon={faJs} size="3x"/>
-                        <img
+                        <img // FortAwesome doesn't have a C# icon
                             src={`${process.env.PUBLIC_URL}/c_sharp_logo.svg`}
                             alt="C# Logo"
                             className="icon"
                         />
+                        <FontAwesomeIcon icon={faJs} size="3x"/>
                     </div>
                     <h3>Full Stack for Big Data</h3>
                     <p>I have designed and implemented large-scale data pipelines, creating robust backends for data processing and frontends for data visualization and interaction. I excel at delivering end-to-end solutions, combining expertise in the software development life cycle (SDLC) as well as the modern data stack, including tools and technologies for data ingestion, transformation, and orchestration.</p>
