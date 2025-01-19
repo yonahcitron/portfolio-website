@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -11,6 +11,7 @@ const labelsFirst = [
     "Python",
     "Pandas",
     "SQL",
+    ".NET Core",
     "REST APIs",
     "Azure Data Factory",
     "DataBricks",
@@ -50,7 +51,10 @@ function Expertise() {
             <h1>Expertise</h1>
             <div className="skills-grid">
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <div className="skill-icons">
+                        <FontAwesomeIcon icon={faPython} size="3x"/>
+                        <FontAwesomeIcon icon={faJs} size="3x"/>
+                    </div>
                     <h3>Full Stack for Big Data</h3>
                     <p>I have designed and implemented large-scale data pipelines, creating robust backends for data processing and frontends for data visualization and interaction. I excel at delivering end-to-end solutions, combining expertise in the software development life cycle (SDLC) as well as the modern data stack, including tools and technologies for data ingestion, transformation, and orchestration.</p>
                     <div className="flex-chips">

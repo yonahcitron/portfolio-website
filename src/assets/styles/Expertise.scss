@@ -19,6 +19,11 @@
     align-items: center;
     text-align: left;
 }
+
+.skills-container .skills-grid .skill .skill-icons {
+    display: flex;
+    gap: 1rem;
+}
   
 .chip {
     color: rgb(39, 40, 34) !important;
