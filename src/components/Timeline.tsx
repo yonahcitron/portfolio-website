@@ -22,11 +22,10 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">University of Cambridge, UK</h3>
             <h4 className="vertical-timeline-element-subtitle">Linguistics - MA, BA Hons.</h4>
-            <p>
-              • Graduated with 1st Class Honours
-              <br></br>
-              • Received the David Thompson Prize for outstanding academic performance in my finals and dissertation
-            </p>
+            <ul>
+              <li>Graduated with 1st Class Honours</li>
+              <li>Received the David Thompson Prize for outstanding academic performance in my finals and dissertation</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -36,11 +35,10 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Kubrick Group Training, UK</h3>
             <h4 className="vertical-timeline-element-subtitle">Software & Data Engineering Course</h4>
-            <p>
-              • Completed intensive 4-month training in enterprise software development
-              <br></br>
-              • Topics included Python, SQL, PySpark, cloud technologies, and Agile practices
-            </p>
+            <ul>
+              <li>Completed intensive 4-month training in enterprise software development</li>
+              <li>Topics included Python, SQL, PySpark, cloud technologies, and Agile practices</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -50,15 +48,12 @@ function Timeline() {
           >
             <h3 className="vertical-timeline-element-title">Shell, UK</h3>
             <h4 className="vertical-timeline-element-subtitle">Software and Data Engineer</h4>
-            <p>
-              • Contracted for Kubrick Group, then hired as Shell staff
-              <br></br>
-              • Extensive experience building robust data products, scalable frameworks, and efficient APIs
-              <br></br>
-              • See below for project details
-            </p>
+            <ul>
+              <li>Contracted for Kubrick Group, then hired as Shell staff</li>
+              <li>Developing enterprise AI solutions for Shell's global business</li>
+              <li>Extensive experience building robust data products, scalable frameworks, and efficient APIs</li>
+            </ul>
           </VerticalTimelineElement>
-
         </VerticalTimeline>
       </div>
     </div>
