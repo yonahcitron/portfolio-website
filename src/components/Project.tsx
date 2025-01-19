@@ -5,6 +5,9 @@ function Project() {
     return (
         <div className="projects-container" id="projects">
             <h1>Professional Projects</h1>
+            <p style={{ color: 'grey', fontStyle: 'italic', margin: 0}}>
+                Note: The website is new and this section is currently under development. Some elements may appear incomplete or not fully styled.
+            </p>
             <div className="projects-list">
                 <div className="project">
                     <h2>Threat Intelligence AI Data Platform</h2>

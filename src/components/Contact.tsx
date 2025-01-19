@@ -54,7 +54,7 @@ function Contact() {
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
-          <p>Interested in collaborating? Drop me a message below!</p>
+            <p>Interested in collaborating? Connect with me on <a href="https://www.linkedin.com/in/yonah-citron-b76705192/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or drop me a message below!</p>
           <Box
             ref={form}
             component="form"
@@ -103,9 +103,12 @@ function Contact() {
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
+            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail} disabled>
               Send
             </Button>
+            <p style={{ color: 'grey', marginTop: '10px' }}>
+              The email service is currently not enabled. Please reach out to me on LinkedIn.
+            </p>
           </Box>
         </div>
       </div>
