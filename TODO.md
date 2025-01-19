@@ -1,0 +1,4 @@
+- In the projects section, make h1 and h2 to the left, and the bullet points to the right
+- Redo the other bullet point place to have li elements instead of manual bullet points
+- Look up other templates for the project cards for ideas 
+- Make some sort of animation for the project cards as well
