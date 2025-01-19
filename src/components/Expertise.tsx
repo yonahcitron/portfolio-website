@@ -6,16 +6,16 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
     "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
+    "C#",
     "Python",
+    "Pandas",
     "SQL",
+    "REST APIs",
+    "Azure Data Factory",
+    "DataBricks",
     "PostgreSQL",
+    "CosmosDB",
     "Postman"
 ];
 
@@ -23,22 +23,24 @@ const labelsSecond = [
     "Git",
     "GitHub Actions",
     "Docker",
-    "AWS",
     "Azure",
+    "AWS",
+    "Bicep",
+    "Terraform",
     "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Bash",
+    "PowerShell Core"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "OpenAI API",
+    "Llama3",
+    "Llama-cpp",
+    "AzureML",
+    "HuggingFace",
+    "Python",
+    "ElasticSearch",
+    "MongoDB"
 ];
 
 function Expertise() {
@@ -49,8 +51,8 @@ function Expertise() {
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>Full Stack for Big Data</h3>
+                    <p>I have designed and implemented large-scale data pipelines, creating robust backends for data processing and frontends for data visualization and interaction. I excel at delivering end-to-end solutions, combining expertise in the software development life cycle (SDLC) as well as the modern data stack, including tools and technologies for data ingestion, transformation, and orchestration.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -61,8 +63,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <h3>DevOps & Infra Automation</h3>
+                    <p>I incorporate cloud-native DevOps practices throughout the entire development lifecycle. I leverage infrastructure-as-code (IaC), CI/CD pipelines, and robust testing to ensure quick deployment from development to production.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (
@@ -73,8 +75,8 @@ function Expertise() {
 
                 <div className="skill">
                     <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <h3>GenAI & LLMs</h3>
+                    <p>I integrate secure Large Language Models (LLMs) into applications to help clients unlock the power of AI for smarter decision-making. With experience building scalable GenAI solutions, I focus on automating workflows, enhancing data pipelines, and delivering intelligent features like insight generation and semantic search, all while ensuring secure and efficient deployment.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsThird.map((label, index) => (
