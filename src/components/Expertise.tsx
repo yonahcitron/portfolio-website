@@ -54,7 +54,7 @@ function Expertise() {
                     <div className="skill-icons">
                         <FontAwesomeIcon icon={faPython} size="3x"/>
                         <img // FortAwesome doesn't have a C# icon
-                            src={`${process.env.PUBLIC_URL}/c_sharp_logo.svg`}
+                            src={`${process.env.PUBLIC_URL}/logos/c_sharp_logo.svg`}
                             alt="C# Logo"
                             className="icon"
                         />
