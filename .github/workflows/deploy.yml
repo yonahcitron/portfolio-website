@@ -24,11 +24,9 @@ jobs:
     - name: Build Project
       run: CI=false npm run build
 
-    - name: Add CNAME File
-      run: echo "yourcustomdomain.com" > ./build/CNAME
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
+        cname: yonahcitron.com
