@@ -4,3 +4,4 @@
 - Make some sort of animation for the project cards as well
 - Set up the deployment with a git push rather than the current manual approach.
 - Every time I redeploy, it removes the old custom domain. Make that part of the deployment pipeline too.
+- The favicon isn't loading.
