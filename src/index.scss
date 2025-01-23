@@ -80,14 +80,6 @@ ul {
   font-weight: bold;
 }
 
-.items-container {
-  padding: 5% 10%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .light-mode {
   background-color: #f8f9fa;
 
@@ -139,13 +131,5 @@ ul {
 
   .flex-chips .chip-title {
     color: #0d1116;
-  }
-}
-
-@media screen {
-  @media (max-width: 768px) {
-    .items-container {
-      padding: 5% 5%;
-    }
   }
 }

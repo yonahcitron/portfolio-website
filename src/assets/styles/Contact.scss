@@ -1,3 +1,19 @@
+.contact-container {
+  padding: 5% 10%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen {
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 5% 5%;
+    }
+  }
+}
+
 .contact_wrapper svg {
   font-size: 1em;
   vertical-align: middle;
@@ -46,3 +62,4 @@ form {
   width: 100% !important;
   margin-bottom: 15px !important;
 }
+

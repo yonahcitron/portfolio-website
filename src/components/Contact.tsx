@@ -50,8 +50,7 @@ function Contact() {
   };
 
   return (
-    <div id="contact">
-      <div className="items-container">
+      <div className="contact-container" id="contact">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
             <p>Interested in collaborating? Connect with me on <a href="https://www.linkedin.com/in/yonah-citron-b76705192/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or drop me a message below!</p>
@@ -112,7 +111,6 @@ function Contact() {
           </Box>
         </div>
       </div>
-    </div>
   );
 }
 

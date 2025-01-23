@@ -1,3 +1,19 @@
+.timeline-container {
+    padding: 5% 10%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen {
+    @media (max-width: 768px) {
+      .contact-container {
+        padding: 5% 5%;
+      }
+    }
+}
+
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
