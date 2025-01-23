@@ -1,64 +1,57 @@
-.projects-container {
+
+
+.projects-list {
     display: flex;
     flex-direction: column;
     padding: 5% 10%;
     text-align: left;
-
-    .projects-list {
-        display: flex;
-        flex-direction: column;
-        padding: 5% 10%;
-        text-align: left;
-        gap: 2rem;
-
-
-        .project {
-            display: grid;
-            grid-template-columns: 2fr 5fr;
-            grid-template-rows: auto auto; /* Two rows for the left column */
-            align-items: center;
-            justify-items: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
-        
-            &:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-            }
-        
-            h2 {
-                align-self: start; /* Put the main title at the bottom of the grid cell so it touches the top of the h3 subtitle */
-                grid-column: 1; /* Place in the first column */
-                grid-row: 1; /* Place in the first row */
-                line-height: normal; /* Reset the line height */
-                margin: 0; /* Remove the default margin */
-                margin-block-end: 0.7rem; /* Add a small margin between the title and subtitle */
-            }
-        
-            h3 {
-                align-self: start; /* Put the subtitle at the top of the grid cell so it touches the bottom of the h2 title */
-                grid-column: 1;
-                grid-row: 2;
-                line-height: normal; /* Reset the line height */
-                margin: 0; /* Remove the default margin */
-                font-size: 1rem;
-
-            }
-        
-            ul {
-                grid-column: 2; /* Take up the entire second column */
-                grid-row: 1 / span 2; /* Span both rows vertically */
-                padding-left: 1.5rem;
-                margin: 0;
-        
-                li {
-                    margin-bottom: 0.5rem;
-                }
+    gap: 2rem;
+    .project {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        grid-template-rows: auto auto; /* Two rows for the left column */
+        align-items: center;
+        justify-items: center;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+    
+        h2 {
+            align-self: start; /* Put the main title at the bottom of the grid cell so it touches the top of the h3 subtitle */
+            grid-column: 1; /* Place in the first column */
+            grid-row: 1; /* Place in the first row */
+            line-height: normal; /* Reset the line height */
+            margin: 0; /* Remove the default margin */
+            margin-block-end: 0.7rem; /* Add a small margin between the title and subtitle */
+        }
+    
+        h3 {
+            align-self: start; /* Put the subtitle at the top of the grid cell so it touches the bottom of the h2 title */
+            grid-column: 1;
+            grid-row: 2;
+            line-height: normal; /* Reset the line height */
+            margin: 0; /* Remove the default margin */
+            font-size: 1rem;
+        }
+    
+        ul {
+            grid-column: 2; /* Take up the entire second column */
+            grid-row: 1 / span 2; /* Span both rows vertically */
+            padding-left: 1.5rem;
+            margin: 0;
+    
+            li {
+                margin-bottom: 0.5rem;
             }
         }
     }
 }
+
 
 
 

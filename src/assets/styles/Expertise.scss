@@ -1,34 +1,27 @@
-.skills-container {
-    padding: 5% 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
 
-    svg {
-        color: white;
-    }
 
-    .skills-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 50px;
+svg {
+    color: white;
+}
 
-        .skill {
-            align-items: center;
-            text-align: left;
-
-            .skill-icons {
-                display: flex;
-                gap: 1rem;
-
-                img {
-                    width: 3em; /* Matches the "3x" inline size of the FontAwesomeIcon  */
-                    height: 3em; /* Matches the "3x" inline size of the FontAwesomeIcon  */
-                }
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    .skill {
+        align-items: center;
+        text-align: left;
+        .skill-icons {
+            display: flex;
+            gap: 1rem;
+            img {
+                width: 3em; /* Matches the "3x" inline size of the FontAwesomeIcon  */
+                height: 3em; /* Matches the "3x" inline size of the FontAwesomeIcon  */
             }
         }
     }
 }
+
 
 .chip {
     color: rgb(39, 40, 34) !important;

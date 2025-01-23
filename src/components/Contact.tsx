@@ -50,66 +50,64 @@ function Contact() {
   };
 
   return (
-      <div className="contact-container" id="contact">
-        <div className="contact_wrapper">
-          <h1>Contact Me</h1>
-            <p>Interested in collaborating? Connect with me on <a href="https://www.linkedin.com/in/yonah-citron-b76705192/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or drop me a message below!</p>
-          <Box
-            ref={form}
-            component="form"
-            noValidate
-            autoComplete="off"
-            className='contact-form'
-          >
-            <div className='form-flex'>
-              <TextField
-                required
-                id="outlined-required"
-                label="Your Name"
-                placeholder="What's your name?"
-                value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-                error={nameError}
-                helperText={nameError ? "Please enter your name" : ""}
-              />
-              <TextField
-                required
-                id="outlined-required"
-                label="Email / Phone"
-                placeholder="How can I reach you?"
-                value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
-                error={emailError}
-                helperText={emailError ? "Please enter your email or phone number" : ""}
-              />
-            </div>
+      <div className="body-container" id="contact">
+        <h1>Contact Me</h1>
+          <p>Interested in collaborating? Connect with me on <a href="https://www.linkedin.com/in/yonah-citron-b76705192/" target="_blank" rel="noopener noreferrer">LinkedIn</a>, or drop me a message below!</p>
+        <Box
+          ref={form}
+          component="form"
+          noValidate
+          autoComplete="off"
+          className='contact-form'
+        >
+          <div className='form-flex'>
             <TextField
               required
-              id="outlined-multiline-static"
-              label="Message"
-              placeholder="Send me any inquiries or questions"
-              multiline
-              rows={10}
-              className="body-form"
-              value={message}
+              id="outlined-required"
+              label="Your Name"
+              placeholder="What's your name?"
+              value={name}
               onChange={(e) => {
-                setMessage(e.target.value);
+                setName(e.target.value);
               }}
-              error={messageError}
-              helperText={messageError ? "Please enter the message" : ""}
+              error={nameError}
+              helperText={nameError ? "Please enter your name" : ""}
             />
-            <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail} disabled>
-              Send
-            </Button>
-            <p style={{ color: 'grey', marginTop: '10px' }}>
-              The email service is currently not enabled. Please reach out to me on LinkedIn.
-            </p>
-          </Box>
-        </div>
+            <TextField
+              required
+              id="outlined-required"
+              label="Email / Phone"
+              placeholder="How can I reach you?"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+              error={emailError}
+              helperText={emailError ? "Please enter your email or phone number" : ""}
+            />
+          </div>
+          <TextField
+            required
+            id="outlined-multiline-static"
+            label="Message"
+            placeholder="Send me any inquiries or questions"
+            multiline
+            rows={10}
+            className="body-form"
+            value={message}
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
+            error={messageError}
+            helperText={messageError ? "Please enter the message" : ""}
+          />
+          <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail} disabled>
+            Send
+          </Button>
+          <p style={{ color: 'grey', marginTop: '10px' }}>
+            The email service is currently not enabled. Please reach out to me on LinkedIn.
+          </p>
+        </Box>
       </div>
   );
 }

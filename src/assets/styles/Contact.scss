@@ -1,20 +1,4 @@
-.contact-container {
-  padding: 5% 10%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media screen {
-  @media (max-width: 768px) {
-    .contact-container {
-      padding: 5% 5%;
-    }
-  }
-}
-
-.contact_wrapper svg {
+svg {
   font-size: 1em;
   vertical-align: middle;
   margin-right: 5px;
