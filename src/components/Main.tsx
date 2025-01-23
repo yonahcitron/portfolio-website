@@ -7,7 +7,7 @@ function Main() {
 
   return (
 
-      <div className="about-section">
+      <div className="about-container">
         <div className="image-wrapper">
           <img src={`${process.env.PUBLIC_URL}/headshots/portfolio-site-headshot.jpeg`} alt="Avatar" />
         </div>
