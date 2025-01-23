@@ -6,7 +6,7 @@ import '../assets/styles/Main.scss';
 function Main() {
 
   return (
-    <div className="container">
+
       <div className="about-section">
         <div className="image-wrapper">
           <img src={`${process.env.PUBLIC_URL}/headshots/portfolio-site-headshot.jpeg`} alt="Avatar" />
@@ -25,7 +25,7 @@ function Main() {
           </div>
         </div>
       </div>
-    </div>
+
   );
 }
 
