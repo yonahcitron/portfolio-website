@@ -50,7 +50,7 @@ function Timeline() {
             <ul>
               <li>Contracted for Kubrick Group, then hired as Shell staff</li>
               <li>Developing enterprise AI solutions for Shell's global business</li>
-              <li>Extensive experience building robust data products, scalable frameworks, and efficient APIs</li>
+              <li>Extensive experience building robust data products, ETL pipelines, scalable frameworks, and efficient APIs</li>
             </ul>
           </VerticalTimelineElement>
         </VerticalTimeline>
