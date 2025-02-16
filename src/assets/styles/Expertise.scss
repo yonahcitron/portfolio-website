@@ -65,23 +65,23 @@ svg {
 
 @media screen {
     @media (max-width: 768px) {
-        .skills-container {
+        .body-container#expertise {
             display: block;
             padding-left: 5%;
             padding-right: 5%;
         }
     
-        .skills-container .skills-grid {
+        .body-container#expertise .skills-grid {
             display: initial;
         }
         
-        .skills-container .skills-grid .skill {
+        .body-container#expertise .skills-grid .skill {
             padding-bottom: 5%;
         }
     }
 
     @media (max-width: 567px) {
-        .skills {
+        .body-container#expertise .skills {
             font-size: 12px;
         }
     }
