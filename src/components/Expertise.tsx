@@ -55,6 +55,7 @@ function Expertise() {
                         <img // FortAwesome doesn't have a certain icons. Using raw svgs instead.
                             src={`${process.env.PUBLIC_URL}/logos/c_sharp_logo.svg`}
                             alt="C# Logo"
+                            className="svg-img"
                         />
                         <FontAwesomeIcon icon={faJs} size="3x"/>
                     </div>
@@ -74,10 +75,12 @@ function Expertise() {
                         <img
                             src={`${process.env.PUBLIC_URL}/logos/azure_logo.svg`}
                             alt="Azure Logo"
+                            className="svg-img"
                         />
                         <img
                             src={`${process.env.PUBLIC_URL}/logos/bash_logo.svg`}
                             alt="Bash Logo"
+                            className="svg-img"
                         />
                     </div>
                     <h3>DevOps & Infra Automation</h3>
@@ -95,14 +98,17 @@ function Expertise() {
                         <img
                             src={`${process.env.PUBLIC_URL}/logos/hf_logo.svg`}
                             alt="HuggingFace Logo"
+                            className="svg-img"
                         />
                         <img
                             src={`${process.env.PUBLIC_URL}/logos/azureml_logo.svg`}
                             alt="AzureML Logo"
+                            className="svg-img"
                         />
                         <img
                             src={`${process.env.PUBLIC_URL}/logos/openai_logo.svg`}
                             alt="OpenAI Logo"
+                            className="svg-img"
                         />
                     </div>
                     <h3>GenAI & LLMs</h3>

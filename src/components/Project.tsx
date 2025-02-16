@@ -63,7 +63,7 @@ const projects: ProjectType[] = [
     ],
   },
   {
-    title: "Enterprise Platform Chatbot Upgrade",
+    title: "Enterprise Chatbot Upgrade",
     description:
       "Revamping a knowledge management system with semantic search and automation.",
     details: [
