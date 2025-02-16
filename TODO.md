@@ -7,6 +7,7 @@
 - The favicon isn't loading on the deployed site.
 - There are 'about-container' css class definitions spread throughout multiple files.
   - Consolidate these into one.
+- Make it so that when I hover on professional projects the mouse goes to a hand and a popup says 'click to learn more' 
 - Doing the above will make it easier to CENTRE EVERYTHING, especially the h1's for each section,
   and the whole of my about section so that I appear in the middle, which it does anyway on smaller
   screens (and looks better imho).
