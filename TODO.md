@@ -1,3 +1,5 @@
+
+- Make the modal maybe pop up from the bottom and you can swipe down to make it disappear? I think that's a better modern modal style but Google about this ... "bottom sheet" or "sliding sheet"... especially on mobile. could actually just add it to the mobile version of the site actually, think about that. Enhance design of the site in general.
 - Increase the sensitivity of scrolling through the porjects... happens too easily currently..
 - change from 'professional projects' to just 'projects'
 - make the buttons which show project progress lower because currently they're overlapping
