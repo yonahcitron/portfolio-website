@@ -1,4 +1,5 @@
-
+- In expertise section, on desktop, make each one appear as I scroll down... on mobile same , but make each sticky until I scroll to a certain point and then the next appears... in all of them, they should "fade in"
+- in professional projects, especially on mobile, but generally too, make an initial animation when I scroll down to show that you can swipe to the side
 - Make a success modal appear if the email sends successfully... currently nothing happens!!!
 - In the project modal, make the detail bullet points NARROWER than the title and subtitle... currently they're too wide and it looks wierd...
 - Make the modal maybe pop up from the bottom and you can swipe down to make it disappear? I think that's a better modern modal style but Google about this ... "bottom sheet" or "sliding sheet"... especially on mobile. could actually just add it to the mobile version of the site actually, think about that. Enhance design of the site in general.
