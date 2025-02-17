@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Pagination, A11y, Mousewheel } from "swiper/modules";
@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "../assets/styles/Project.scss";
 
-// Register the Swiper modules
 SwiperCore.use([Pagination, A11y, Mousewheel]);
 
 type ProjectType = {
@@ -75,10 +74,54 @@ const projects: ProjectType[] = [
   },
 ];
 
+type ProjectModalProps = {
+  project: {
+    title: string;
+    description: string;
+    details: string[];
+  };
+  onClose: () => void;
+};
+
+function ProjectModal({ project, onClose }: ProjectModalProps) {
+  useEffect(() => {
+    // Add class to body to disable scrolling
+    document.body.classList.add("modal-open");
+
+    return () => {
+      // Remove class from body to enable scrolling
+      document.body.classList.remove("modal-open");
+    };
+  }, []);
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="close-button" onClick={onClose}>
+          &times;
+        </button>
+        <h2>{project.title}</h2>
+        <h3>{project.description}</h3>
+        <ul>
+          {project.details.map((detail, index) => (
+            <li key={index}>{detail}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
 function Project() {
+  const swiperRef = useRef<SwiperCore | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectType | null>(
+    null
+  );
+
   return (
     <div className="body-container" id="projects">
       <h1>Professional Projects</h1>
+
       <Swiper
         spaceBetween={30}
         slidesPerView={3}
@@ -86,31 +129,44 @@ function Project() {
         pagination={{ clickable: true }}
         grabCursor={true}
         mousewheel={{ forceToAxis: true, releaseOnEdges: true, sensitivity: 0.5 }}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-          },
-          670: {
-            slidesPerView: 3,
-          },
-        }}
-        onSlideChange={() => console.log("Scrolled to a different project slide.")}
-        onSwiper={(swiper: any) => console.log(swiper)}
+        breakpoints={{ 0: { slidesPerView: 1 }, 670: { slidesPerView: 3 } }}
+        onSwiper={(swiperInstance: SwiperCore) =>
+          (swiperRef.current = swiperInstance)
+        }
       >
-        {projects.map((project: ProjectType, index: number) => (
+        {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <div className="project">
+            <div
+              className="project"
+              onClick={() => {
+                const swiper = swiperRef.current; // Get Swiper instance
+                if (!swiper) return;
+
+                if (swiper.activeIndex === index) {
+                  // If it's the center slide, open modal
+                  setSelectedProject(project);
+                } else {
+                  // Otherwise, slide to the clicked project
+                  swiper.slideTo(index);
+                }
+              }}
+            >
               <h2>{project.title}</h2>
-              <h3>{project.description}</h3>
-              <ul>
-                {project.details.map((detail: string, i: number) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
+              <h3 style={{ fontWeight: "normal" }}>{project.description}</h3>
+              <div className="learn-more">
+                <small>click to learn more</small>
+              </div>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </div>
   );
 }

@@ -1,5 +1,7 @@
-- In the projects section, make h1 and h2 to the left, and the bullet points to the right
+- Increase the sensitivity of scrolling through the porjects... happens too easily currently..
+- Within each project, layout the text better for different screen sizes... when the screens big, currently it looks too spaced out... maybe make it adjust dynamically???
 - Redo the other bullet point place to have li elements instead of manual bullet points
+- Add colour to the expertise logos? Maybe make them the original ones that they were...
 - Look up other templates for the project cards for ideas 
 - Make some sort of animation for the project cards as well
 - Set up the deployment with a git push rather than the current manual approach.
