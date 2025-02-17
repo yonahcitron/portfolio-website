@@ -1,4 +1,7 @@
 - Increase the sensitivity of scrolling through the porjects... happens too easily currently..
+- change from 'professional projects' to just 'projects'
+- make the buttons which show project progress lower because currently they're overlapping
+- maybe make some subtle animation when the carousel slides into view, like with the timeline? otherwise looks a bit stale
 - Within each project, layout the text better for different screen sizes... when the screens big, currently it looks too spaced out... maybe make it adjust dynamically???
 - Redo the other bullet point place to have li elements instead of manual bullet points
 - Add colour to the expertise logos? Maybe make them the original ones that they were...
