@@ -92,16 +92,6 @@
   
 }
 
-@media screen {
-  @media (max-width: 700px) {
-    .projects-container {
-      display: block;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  }
-}
-
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -115,13 +105,13 @@
   z-index: 1000;
 }
 
-@keyframes modalExpand {
+@keyframes modalSlideIn {
   0% {
-    transform: scale(0.9);
+    transform: translateY(-20px);
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -129,13 +119,12 @@
 .modal-content {
   background: white;
   padding: 40px; /* Increase padding */
-  border-radius: 8px;
+  border-radius: 16px;
   width: 60%; /* Increase width */
   max-width: 800px; /* Increase max-width */
   max-height: 80%; /* Increase max-height */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  animation: modalExpand 0.4s ease-in-out; /* Apply animation */
-  display: flex;
+  animation: modalSlideIn 0.3s ease-out;  display: flex;
   flex-direction: column;
   align-items: center; /* Center content horizontally */
   justify-content: center; /* Center content vertically */
@@ -180,5 +169,15 @@
     width: 90%; /* Adjust width for smaller screens */
     height: auto; /* Adjust height for smaller screens */
     padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen {
+  @media (max-width: 700px) {
+    .projects-container {
+      display: block;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 }
