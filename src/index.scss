@@ -141,8 +141,4 @@ ul {
   .flex-chips .chip-title {
     color: #0d1116;
   }
-
-  .svg-img { /* Converts expertise svg's from white to black. They cannot be styled directly since they use img tags */
-    filter: brightness(1) invert(1);
-  }
 }
