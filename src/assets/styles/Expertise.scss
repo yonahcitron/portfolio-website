@@ -1,26 +1,34 @@
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    .skill {
-        align-items: center;
-        text-align: left;
-        max-width: 400px;
-        .skill-icons {
-            display: flex;
-            gap: 1rem;
-            height: 4em; /* Make the height of the container the same as the maximum height of the icons */
-            align-items: center; /* Vertically center the smaller icons in the slightly larger skill-icons section */
-            img {
-                width: 3em; /* Matches the "3x" inline size of the FontAwesomeIcon  */
-                height: 3em; /* Matches the "3x" inline size of the FontAwesomeIcon  */
-            }
-            #docker_logo, #huggingface_logo {  /* These images looks a bit small when 3em, due to asymetric shape, so enlarge slightly compared to others. */
-                width: 4em;
-                height: 4em;
-            }
-        }
+  display: grid;
+  /* Instead of 1fr columns, let them size themselves based on content (up to 400px if you have that max-width). */
+  grid-template-columns: repeat(3, max-content); 
+  /* or use auto if you prefer: repeat(3, auto) */
+  
+  /* Reduce the gap so columns are closer */
+  grid-gap: 60px;
+  justify-content: center;
+  margin: 0 auto;  // The skills grid is in a block element. This is how you center it.
+
+  .skill {
+    /* You can still have a max-width on each skill if you want them to top out at 400px */
+    max-width: 400px;  
+    text-align: left;   // or center, depending on your preference
+    .skill-icons {
+      display: flex;
+      gap: 1rem;
+      height: 4em;
+      align-items: center;
+      img {
+        width: 3em;
+        height: 3em;
+      }
+      #docker_logo,
+      #huggingface_logo {
+        width: 4em;
+        height: 4em;
+      }
     }
+  }
 }
 
 /* OpenAI logo is black and white, so invert it in light mode */
