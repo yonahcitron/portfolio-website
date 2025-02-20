@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'),
+       url('https://fonts.gstatic.com/s/jetbrainsmono/v13/RLpnAO8-iPjS3c-D9P0xDOu6Vw4.woff2') format('woff2'),
+       url('https://fonts.gstatic.com/s/jetbrainsmono/v13/RLpnAO8-iPjS3c-D9P0xDOu6Vw4.woff') format('woff');
+  font-display: swap; /* Ensures fallback font is used until JetBrains Mono loads */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,6 +17,16 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
+}
+
+h1, h2 {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+}
+
+p, a, ul, h3, h4, h5, label, button {
+  color: white;
+  font-family: "Lato", sans-serif;
 }
 
 .main-container {
@@ -42,10 +60,7 @@ a:hover {
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
-p, a, ul, h1, h2, h3, h4, h5, label, button {
-  color: white;
-  font-family: "Lato", sans-serif;
-}
+
 
 ul {
   list-style-type: square;
