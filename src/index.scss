@@ -25,6 +25,13 @@ code {
   justify-content: center;
   text-align: left;
 }
+@media screen {
+  @media (max-width: 768px) {
+      .body-container {
+          align-items: flex-start;
+      }
+  }
+}
 
 a {
   text-decoration: none;

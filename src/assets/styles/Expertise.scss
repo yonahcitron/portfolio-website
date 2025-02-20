@@ -1,13 +1,9 @@
 .skills-grid {
-  display: grid;
+  display: flex;
   /* Instead of 1fr columns, let them size themselves based on content (up to 400px if you have that max-width). */
-  grid-template-columns: repeat(3, max-content); 
   /* or use auto if you prefer: repeat(3, auto) */
-  
-  /* Reduce the gap so columns are closer */
   grid-gap: 60px;
   justify-content: center;
-  margin: 0 auto;  // The skills grid is in a block element. This is how you center it.
 
   .skill {
     /* You can still have a max-width on each skill if you want them to top out at 400px */
@@ -79,9 +75,7 @@
 @media screen {
     @media (max-width: 768px) {
         .body-container#expertise {
-            display: block;
-            padding-left: 5%;
-            padding-right: 5%;
+            flex-direction: column;
         }
     
         .body-container#expertise .skills-grid {
